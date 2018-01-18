@@ -2,6 +2,8 @@
 
 int main()
 {
-	printf( "Hello, world!!!\n" );
+	//send( 1, "hello\n", 6, 0 );
+	while(1);
+	//printf( "Hello, world!!!\n" );
 }
 

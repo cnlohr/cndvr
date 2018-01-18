@@ -7,7 +7,10 @@ The SV3C Camera I typically use is: https://www.amazon.com/Security-Ethernet-Sur
 The info that you'll care about it is:
  Root password is "cat1029"
 
-To do the hardware hacking, you'll need to install gcc-arm-linux-gnueabi
+To do the hardware hacking, you'll need to install:
+```
+	apt-get install gcc-arm-linux-gnueabi libc6-dev-armel-cross
+```
 
 Also, there's a neat little file called ftpupload in the bin/vslocal folder.
 
