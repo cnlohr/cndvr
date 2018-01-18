@@ -1,0 +1,295 @@
+Linux version 2.6.35.12 (cwz@vvvsvr) (gcc version 4.5.2 (SONiX GCC-4.5.2 Release 2011-12-06) ) #16 Fri Jul 1 20:27:18 CST 2016
+CPU: ARM926EJ-S [41069265] revision 5 (ARMv5TEJ), cr=00057177
+CPU: VIVT data cache, VIVT instruction cache
+Machine: SONiX SN98600 Development Platform
+Memory policy: ECC disabled, Data cache writeback
+On node 0 totalpages: 16384
+free_area_init_node: node 0, pgdat c035c468, node_mem_map c037a000
+  Normal zone: 128 pages used for memmap
+  Normal zone: 0 pages reserved
+  Normal zone: 16256 pages, LIFO batch:3
+CPU: found ITCM 16k @ ffff4000, enabled
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 16256
+Kernel command line: console=ttyS0,115200 root=/dev/mtdblock2 rootfstype=squashfs init=/linuxrc mem=64M isp=11M vc=11M vo=0M mtdparts=snx-spi:320k(uboot),1408k(kernel),6016k(rootfs),64k(key),384k(etc)
+PID hash table entries: 256 (order: -2, 1024 bytes)
+Dentry cache hash table entries: 8192 (order: 3, 32768 bytes)
+Inode-cache hash table entries: 4096 (order: 2, 16384 bytes)
+Memory: 64MB = 64MB total
+Memory: 38816k/38816k available, 26720k reserved, 0K highmem
+Virtual kernel memory layout:
+    vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+    fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+    DMA     : 0xffa00000 - 0xffe00000   (   4 MB)
+    vmalloc : 0xc4800000 - 0xe0000000   ( 440 MB)
+    lowmem  : 0xc0000000 - 0xc4000000   (  64 MB)
+    modules : 0xbf000000 - 0xc0000000   (  16 MB)
+      .init : 0xc0008000 - 0xc001d000   (  84 kB)
+      .text : 0xc001d000 - 0xc0330000   (3148 kB)
+      .data : 0xc0344000 - 0xc035cae0   (  99 kB)
+SLUB: Genslabs=11, HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+Hierarchical RCU implementation.
+        RCU-based detection of stalled CPUs is disabled.
+        Verbose stalled-CPUs detection is disabled.
+NR_IRQS:96
+Console: colour dummy device 80x30
+console [ttyS0] enabled
+Calibrating delay loop... 200.29 BogoMIPS (lpj=1001472)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 512
+CPU: Testing write buffer coherency: ok
+NET: Registered protocol family 16
+0x00b00000 bytes system memory reserved for isp device at 0x003fd000
+0x00b00000 bytes system memory reserved for vc device at 0x00efd000
+bio: create slab <bio-0> at 0
+Linux media interface: v0.10
+Linux video capture interface: v2.00
+Advanced Linux Sound Architecture Driver Version 1.0.23.
+Switching to clocksource ft_clocksource
+Switched to NOHz mode on CPU #0
+NET: Registered protocol family 2
+IP route cache hash table entries: 1024 (order: 0, 4096 bytes)
+TCP established hash table entries: 2048 (order: 2, 16384 bytes)
+TCP bind hash table entries: 2048 (order: 1, 8192 bytes)
+TCP: Hash tables configured (established 2048 bind 2048)
+TCP reno registered
+UDP hash table entries: 256 (order: 0, 4096 bytes)
+UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+NET: Registered protocol family 1
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+JFFS2 version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+fuse init (API version 7.14)
+msgmni has been set to 75
+async_tx: api initialized (async)
+io scheduler noop registered (default)
+SONIX UART driver, (c) 2013 Sonix
+snx_uart.0: ttyS0 at MMIO 0x98a00000 (irq = 8) is a SONiX
+snx_uart.1: ttyS1 at MMIO 0x98b00000 (irq = 10) is a SONiX
+loop: module loaded
+5 cmdlinepart partitions found on MTD device snx-spi
+Creating 5 MTD partitions on "snx-spi":
+0x000000000000-0x000000050000 : "uboot"
+0x000000050000-0x0000001b0000 : "kernel"
+0x0000001b0000-0x000000790000 : "rootfs"
+0x000000790000-0x0000007a0000 : "key"
+0x0000007a0000-0x000000800000 : "etc"
+snx_spi_init register
+SONiX Ethernet driver, (c) 2013 Sonix
+eth0: Dropping NETIF_F_SG since no checksum feature.
+snx_mac: SNX Ethernet MAC controller at 0x90500000 (irq = 17) 00:b0:27:08:90:14.
+snx_mac: IP101G Ethernet PHY 100 Mbps FullDuplex (Auto Negotiation)
+mice: PS/2 mouse device common for all mice
+i2c /dev entries driver
+SONIX SNX I2C adapter driver, (c) 2012 Sonix
+snx_i2c.0: SNX I2C0 controller at 0x98300000 (irq = 1)
+I2C GPIO driver INIT
+snx_i2c.1: SNX I2C1 controller at 0x98400000 (irq = 2)
+snx_hdma snx_hdma: SNX AHB DMA Controller (memcpy memset), 4 channels
+SNX AHB DMA driver register
+ALSA device list:
+  No soundcards found.
+TCP cubic registered
+NET: Registered protocol family 17
+lib80211: common routines for IEEE802.11 drivers
+lib80211_crypt: registered algorithm 'NULL'
+VFS: Mounted root (squashfs filesystem) readonly on device 31:2.
+Freeing init memory: 84K
+Sonix GPIO Driver
+BTLED- board---8700. 
+Init led ko OK 
+SONIX RTC, (c) 2012
+snx_rtc snx_rtc: rtc core: registered snx_rtc as rtc0
+driver loaded.
+sonix snx_aud_gpio diver register
+snx_isp snx_isp.0: [ISP] isp_camera_probe
+soc-camera-pdrv soc-camera-pdrv.0: Probing soc-camera-pdrv.0
+scan:sc2135
+sc2135 stop streaming
+0x0103 = 0x00
+0x0100 = 0x00
+0x3e03 = 0x03
+0x3e01 = 0x46
+0x3e08 = 0x00
+0x3e09 = 0x10
+0x3416 = 0x11
+0x3300 = 0x20
+0x3301 = 0x08
+0x3303 = 0x30
+0x3306 = 0x78
+0x330b = 0xd0
+0x3309 = 0x30
+0x3308 = 0x0a
+0x331e = 0x26
+0x331f = 0x26
+0x3320 = 0x2c
+0x3321 = 0x2c
+0x3322 = 0x2c
+0x3323 = 0x2c
+0x330e = 0x20
+0x3f05 = 0xdf
+0x3f01 = 0x04
+0x3626 = 0x04
+0x3312 = 0x06
+0x3340 = 0x03
+0x3341 = 0x68
+0x3342 = 0x02
+0x3343 = 0x20
+0x3333 = 0x10
+0x3334 = 0x20
+0x3621 = 0x18
+0x3626 = 0x04
+0x3635 = 0x34
+0x3038 = 0xa4
+0x3630 = 0x84
+0x3622 = 0x0e
+0x3620 = 0x62
+0x3627 = 0x08
+0x3637 = 0x87
+0x3638 = 0x86
+0x3034 = 0xd2
+0x5780 = 0xff
+0x5781 = 0x0c
+0x5785 = 0x10
+0x3d08 = 0x01
+0x3640 = 0x00
+0x3662 = 0x82
+0x335d = 0x00
+0x4501 = 0xa4
+0x3333 = 0x00
+0x3627 = 0x02
+0x3620 = 0x62
+0x5781 = 0x04
+0x3333 = 0x10
+0x3306 = 0x69
+0x3635 = 0x52
+0x3636 = 0x7c
+0x3631 = 0x84
+0x3637 = 0x88
+0x3306 = 0x6b
+0x330b = 0xd0
+0x3630 = 0x84
+0x303a = 0x07
+0x3039 = 0x76
+0x3343 = 0x40
+0x3f04 = 0x02
+0x3f05 = 0x04
+0x3340 = 0x03
+0x3341 = 0xe5
+0x3207 = 0x4e
+0x335d = 0x20
+0x3368 = 0x02
+0x3369 = 0x00
+0x336a = 0x04
+0x336b = 0x65
+0x330e = 0x20
+0x3367 = 0x05
+0x3620 = 0x92
+0x3634 = 0xd2
+0x3633 = 0x17
+0x3315 = 0x02
+0x3334 = 0xa0
+0x3312 = 0x00
+0x335e = 0x02
+0x335f = 0x0a
+0x3306 = 0x60
+0x3f04 = 0x01
+0x3f05 = 0xf7
+0x303a = 0x15
+0x3039 = 0x2e
+0x3035 = 0x25
+0x3034 = 0x2e
+0x3036 = 0x00
+0x320c = 0x04
+0x320d = 0x65
+0x320e = 0x04
+0x320f = 0xb0
+0x3368 = 0x02
+0x3369 = 0x4b
+0x363a = 0x04
+0x336b = 0xb0
+0x3306 = 0x70
+0x3640 = 0x01
+0x3034 = 0x2e
+0x3633 = 0x16
+0x3211 = 0x0a
+0x3213 = 0x0a
+sensor:sc2135 (id:0x2135) driver loadded
+sc2135 start streaming
+IQ.bin OK!
+ubIdx = 1, fps = 30
+priv->uwMaxExpL = 1200, info->frame_rate = 30 
+snx_isp snx_isp.0: ISP Camera driver loaded
+snx_vc snx_vc: sonix_vc device registered as /dev/video1
+snx_vc snx_vc: sonix_vc device registered as /dev/video1
+snx_vc snx_vc: sonix_vc device registered as /dev/video2
+snx_vc snx_vc: sonix_vc device registered as /dev/video2
+snx_sd: Unknown symbol mmc_request_done (err 0)
+snx_sd: Unknown symbol mmc_remove_host (err 0)
+snx_sd: Unknown symbol mmc_alloc_host (err 0)
+snx_sd: Unknown symbol mmc_add_host (err 0)
+snx_sd: Unknown symbol mmc_wait_for_cmd (err 0)
+snx_sd: Unknown symbol mmc_free_host (err 0)
+snx_sd: Unknown symbol mmc_detect_change (err 0)
+snx_sd: Unknown symbol mmc_request_done (err 0)
+snx_sd: Unknown symbol mmc_remove_host (err 0)
+snx_sd: Unknown symbol mmc_alloc_host (err 0)
+snx_sd: Unknown symbol mmc_add_host (err 0)
+snx_sd: Unknown symbol mmc_wait_for_cmd (err 0)
+snx_sd: Unknown symbol mmc_free_host (err 0)
+snx_sd: Unknown symbol mmc_detect_change (err 0)
+SNX Watchdog Timer, (c) 2012
+Sonix926 Watchdog Timer: timer margin 10 sec
+i2c_interfaces: module license 'unspecified' taints kernel.
+Disabling lock debugging due to kernel taint
+File[/home/cwz/work-code/gk_ipc/drivers/eeprom/eeprom.c] Func[eeprom_init] Line[620]: eeprom load ok
+eth0: Setting MAC address to c0:99:db:b9:14:29
+pre_margin = 5
+snx_rtc_read_elapsed_second:293: not ready to read time
+snx_rtc_write_elapsed_second:323: not ready to write time
+snx_rtc_write_elapsed_second:323: not ready to write time
+channel 0 buffer count=2, size=3133440
+sc2135 start streaming
+snx_vc snx_vc: snx_vc_open: Created instance c3c42000, m2m_ctx: c3f21400
+snx_vc snx_vc: snx_vidioc_s_parm: snx_vidioc_s_parm: OUTPUT fps == 25
+snx_vc snx_vc: snx_vidioc_s_parm: snx_vidioc_s_parm: CAPTURE fps == 25
+snx_vc snx_vc: s_fmt: Setting format for type 2, wxh: 1920x1080, fmt: 808596563
+snx_vc snx_vc: s_fmt: Setting format for type 1, wxh: 1920x1080, fmt: 875967048
+>> alloc size=6266880 reduce size=3133440
+channel 1 buffer count=2, size=356352
+sc2135 start streaming
+snx_vc snx_vc: snx_vc_open: Created instance c3c42800, m2m_ctx: c2817000
+snx_vc snx_vc: snx_vidioc_s_parm: snx_vidioc_s_parm: OUTPUT fps == 25
+snx_vc snx_vc: snx_vidioc_s_parm: snx_vidioc_s_parm: CAPTURE fps == 25
+snx_vc snx_vc: s_fmt: Setting format for type 2, wxh: 640x360, fmt: 808596563
+snx_vc snx_vc: s_fmt: Setting format for type 1, wxh: 640x360, fmt: 875967048
+>> alloc size=712704 reduce size=356352
+snx_vc snx_vc: snx_vc_open: Created instance c3c43000, m2m_ctx: c3fb4400
+snx_vc snx_vc: snx_vidioc_s_parm: snx_vidioc_s_parm: CAPTURE fps == 1
+snx_vc snx_vc: s_fmt: Setting format for type 1, wxh: 1920x1080, fmt: 1196444237
+>> alloc size=6266880 reduce size=3133440
+snx_rtc_write_elapsed_second:323: not ready to write time
+snx_rtc_write_elapsed_second:323: not ready to write time
+snx_rtc_write_elapsed_second:323: not ready to write time
+snx_vc snx_vc: snx_job_ready: [0][1], No ready buffers...
+snx_vc snx_vc: snx_job_ready: [0][1], No ready buffers...
+snx_vc snx_vc: snx_job_ready: [0][1], No ready buffers...
+TCP: time wait bucket table overflow
+TCP: time wait bucket table overflow
+TCP: time wait bucket table overflow
+TCP: time wait bucket table overflow
+TCP: time wait bucket table overflow
+TCP: time wait bucket table overflow
+TCP: time wait bucket table overflow
+TCP: time wait bucket table overflow
+snx_rtc_write_elapsed_second:323: not ready to write time
+TCP: time wait bucket table overflow
+TCP: time wait bucket table overflow
+snx_rtc_write_elapsed_second:323: not ready to write time
+snx_vc snx_vc: snx_job_ready: [0][1], No ready buffers...
+snx_vc snx_vc: snx_job_ready: [0][1], No ready buffers...
+snx_vc snx_vc: snx_job_ready: [0][1], No ready buffers...
+snx_vc snx_vc: snx_job_ready: [0][1], No ready buffers...
+snx_vc snx_vc: snx_job_ready: [0][1], No ready buffers...
+snx_vc snx_vc: snx_job_ready: [0][1], No ready buffers...
+snx_vc snx_vc: snx_job_ready: [0][1], No ready buffers...
+snx_vc snx_vc: snx_job_ready: [0][1], No ready buffers...
+
