@@ -1,0 +1,46 @@
+  PID USER       VSZ STAT COMMAND
+    1 root      1180 S    init
+    2 root         0 SW   [kthreadd]
+    3 root         0 SW   [ksoftirqd/0]
+    4 root         0 SW   [events/0]
+    5 root         0 SW   [khelper]
+    8 root         0 SW   [async/mgr]
+  109 root         0 SW   [sync_supers]
+  111 root         0 SW   [bdi-default]
+  113 root         0 SW   [kblockd/0]
+  116 root         0 SW   [kseriod]
+  150 root         0 SW   [khungtaskd]
+  151 root         0 SW   [kswapd0]
+  197 root         0 SW   [aio/0]
+  204 root         0 SW   [crypto/0]
+  265 root         0 SW   [mtdblock0]
+  270 root         0 SW   [mtdblock1]
+  275 root         0 SW   [mtdblock2]
+  280 root         0 SW   [mtdblock3]
+  285 root         0 SW   [mtdblock4]
+  290 root         0 SW   [snx-spi.0]
+  343 root         0 SWN  [jffs2_gcd_mtd4]
+  345 root      1172 S    {boottab} /bin/sh /etc/boottab
+  347 root      1180 S    {exe} ash ./p2p_deamon.sh
+  350 root      1176 S    /sbin/getty -L ttyS0 115200 vt100
+  351 root      1164 S    /sbin/syslogd -n -m 0
+  352 root      1164 S    /sbin/klogd -n
+  357 root      1168 S    telnetd
+  366 root       608 S    /usr/local/bin/timing_cali
+  398 root         0 SW   [isp]
+  446 root      1164 S    syslogd -m 0 -O /tmpfs/syslog.txt -S -s 100 -b 0
+  448 root      1192 S    {exe} ash /bin/vs/sysmon.sh
+  449 root      1324 S    {net_serv.sh} /bin/sh /bin/vs/cgi-bin/net_serv.sh
+  450 root      1176 S    {ddns-update.sh} /bin/sh /usr/sbin/ddns/ddns-update.
+  464 root      1168 S    {start_cgiServer} /bin/sh /bin/vs/start_cgiServer.sh
+  466 root     50020 S    ./vs_server -sensortype sc2135 -boardtype 8700 -rest
+  475 root       608 S    /bin/vs/cgiServer
+  528 root      1180 S    udhcpc -i eth0
+ 8543 root      1160 S    sleep 15
+ 8606 root      6316 S    /bin/vs/jsy_search -i PPCN-575635-KBJUU -t 80 -u adm
+ 8614 root      1160 S    sleep 5
+ 8615 root      1160 S    /bin/busybox sleep 2
+ 8621 root      1160 S    sleep 2
+ 8626 root      1160 S    sleep 1
+ 8627 root      1168 R    ps
+17609 root      1188 S    -sh
