@@ -8,13 +8,12 @@ PORT:=23
 LFLD:=../lib
 # TODO: -Wl,-rpath,/lib -Wl,-rpath-link,../lib
 
-LDFLAGS:=-nodefaultlibs -nostdlib -L../lib -Wl,-rpath,/lib \
-	$(LFLD)/libdl.so.0 \
+LDFLAGS:=-nostdlib -nodefaultlibs -L/lib -Wl,-rpath,/lib -Wl,-rpath-link,../lib \
 	$(LFLD)/libc.so.0 \
-	$(LFLD)/ld-uClibc.so.0
+
+#	$(LFLD)/ld-uClibc.so.0 \
 
 #	-nodefaultlibs -nostdlib -L../lib -Wl,-rpath,/lib \
-
 #	-Wl,--dynamic-linker  \
 	-Wl,$(LFLD)/libdl.so.0 \
 	-Wl,$(LFLD)/ld-uClibc.so.0 \
