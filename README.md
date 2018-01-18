@@ -24,6 +24,10 @@ cd /tmp; ln -s /lib lib
 Then visit http://10.42.0.55/log/lib/ and download them into the 'libs' folder!
 
 
+You really should go get the compiler from https://uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-armv5l.tar.bz2 and download it into the uclibc/ folder and untar.
+
+
+
 
 
 From livestream:
