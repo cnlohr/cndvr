@@ -32,3 +32,46 @@ You really should go get the compiler from https://uclibc.org/downloads/binaries
 
 From livestream:
 Xander Luciano​pastebin com/FgYk7yqS - this is the code needed to﻿ make an autoupdating google sheets image
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Initial attempt at RTSP
+
+```apt-get install libcurl4-openssl-dev```
+
+# Setup Instructions
+
+## HOSAFE 1MD4P PoE Camera
+
+This is terrible.  Don't use it.
+
+## SV3C Full HD 1080P
+
+Visit in-browser from DHCP settings.  Warning: This camera calls home to china.  Disabling "p2p" seems to fix this.
+
+Connect to: rtsp://10.42.0.223:554/11
+
+
+## Ventech VT-R889IP 1 Megapixel 720P
+
+P.S. This camera connects back home.  May want to lock it out of the internet
+
+Connect to: rtsp://10.42.0.18/h264/cam1
+
+## UN-YS-BULLET-4MP IPC2124SR3-DFP36
+
+DOES NOT CONNECT BACK HOME! :)
+
+Doesn't have LEDs
+
+rtsp://10.42.0.36/media/video1
