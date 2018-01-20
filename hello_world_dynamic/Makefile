@@ -6,7 +6,7 @@ MYIP:=10.42.0.1
 IP:=10.42.0.55
 PORT:=23
 
-CFLAGS:=-O1 -march=armv5te -mtune=arm926ej-s
+CFLAGS:=-O1 -march=armv5te -mtune=arm926ej-s  -D__PIC__ -D__ARCH_USE_MMU__ 
 
 #For static uclibc compiler
 #LDFLAGS:= -static
@@ -14,7 +14,7 @@ CFLAGS:=-O1 -march=armv5te -mtune=arm926ej-s
 
 CC:=arm-linux-gnueabi-gcc
 LDFLAGS:=-Llib -nostdlib -nodefaultlibs \
-	lib/libc.so.0 lib/ld-uClibc.so.0
+	lib/libc.so.0 lib/ld-uClibc.so.0 -Wl,--dynamic-linker=/lib/ld-uClibc.so.0
 
 $(TOOL) : $(TOOL).c crt1.S
 	$(CC)  $(CFLAGS) -o $@ $^  $(LDFLAGS)
